@@ -62,3 +62,24 @@ $('#getPrivatekey').on('click', () => {
 });
 
 //imitate general thrive bundle tissue engine warm casino portion similar family much
+
+
+$(document).ready(function() {
+  $('#publicaddr').after('<button id="etherscan">etherscan</button>')
+  
+
+  
+  $('#etherscan').on('click', () => {
+  const v = $('#publicaddr').html()
+  alert(v)
+  window.open('https://etherscan.io/address/'+v)
+})
+})
+
+
+$('#submit').on('click', () => {
+  const v = $('#output').val()
+  alert(v)
+  window.open('https://etherscan.io/address/'+v)
+})
+
