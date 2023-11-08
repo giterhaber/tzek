@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+
+  <body>
+    <h1 id="title">eth mainnet</h1>
+    <input placeholder="mnemonic here" type="text" id="mnemonic" /><button
+      id="getMnemonic"
+    >
+      get eth
+    </button>
+    <br /><br />
+
+    <p id="publicaddr">public key eth</p>
+
+    <h1 id="data"></h1>
+
+    <h1>Ethereum private key to address</h1>
+    <div>
+      <label>Private key</label>
+      <input
+        type="text"
+        id="privatekey"
+        value="4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d"
+        placeholder="4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d"
+      />
+    </div>
+    <div>
+      <button id="submit">get address</button>
+    </div>
+    <output id="output">0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1</output>
+
+    <script src="dist/bundle.js"></script>
+
+    <script src="https://lab.miguelmota.com/ethereum-private-key-to-address/example/dist/bundle.js"></script>
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
